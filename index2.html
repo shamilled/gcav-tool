@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Read Data GCAV Tool</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link href="css/index.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+
+</head>
+<body style="height: 100%; background-color: #39628e;">
+    <div class="container text-center" id="container">
+        <div class="form-signin">
+            <div>
+                <img src="/img/Logo.png" alt="GCAV Logo">
+
+            </div>
+            <div class="jumbotron" id="welcome">
+                <h1 class="display-4"> Welcome! </h1>
+                <p class="lead">This is a demo of the tool that is to be used on the GCAV website. It is still in development and is on grounds to be changed and updated.</p>
+                <hr>
+                
+                <button type="button" class="btn btn-outline-primary btn-block" onclick="clear()">Lets Start!</button>
+                <p id="test"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementsByTagName('body')[0].style.padding = '40px 0px 40px 0px';
+
+        let container = document.getElementById('container');
+        container.style.maxWidth = '400px';
+        container.style.margin = '0 auto';
+
+        function clear() {
+            console.log('hello this is a test!');
+            document.getElementById('test').textContent = 'Hello!';
+
+            //var parent = document.getElementsByTagName('div')[0];
+            //var child = document.getElementById('welcome')[0];
+            //parent.removeChild(child);
+
+            //let firstDiv = document.getElementsById('welcome')[0];
+            //delete document.getElementsById('welcome')[0];
+            //if (firstDiv.style.display == 'none') {
+           //     firstDiv.style.display = 'block';
+            //}
+            //else {
+            //    firstDiv.style.display = 'none';
+           // }
+
+           document.getElementsByTagName('h1')[0].textContent = 'Please work please.';
+        }
+    </script>
+
+
+
+</body>
+</html>
